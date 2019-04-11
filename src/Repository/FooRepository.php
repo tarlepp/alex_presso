@@ -19,6 +19,11 @@ class FooRepository extends ServiceEntityRepository
         parent::__construct($registry, Foo::class);
     }
 
+    public function someRepositoryMethod(): string
+    {
+        return 'hello world';
+    }
+
     // /**
     //  * @return Foo[] Returns an array of Foo objects
     //  */
